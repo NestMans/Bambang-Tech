@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bambang Tech - Jasa Komputer & Desain</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .header {
+            background: #007bff;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .logo img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .service {
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+
+        .service img {
+            width: 250px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .toggle-info {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .info {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .contact {
+            margin: 30px 0;
+        }
+
+        .contact a {
+            background: #25D366;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo"><img src="LOG.png" width="auto" max-width="300" alt="logo komputer"></div>
+        <h1>Jasa Perbaikan & Desain Grafis</h1>
+        <p>Solusi cepat dan terpercaya untuk perangkat Anda</p>
+        <nav>
+            <ul>
+                <li><a href="#repair">Perbaikan Laptop, Komputer & Android</a></li>
+                <li><a href="#design">Jasa Desain</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <section id="repair" class="service">
+            <h2>Jasa Perbaikan Laptop, Komputer & Android</h2>
+            <div>
+                <img src="install-windows.jpg" max-width="300" height="350" alt="Perbaikan Komputer">
+                <img src="repair-pc.jpg" max-width="300" height="350" alt="Perbaikan Laptop">
+            </div>
+            <span class="toggle-info" onclick="toggleInfo('repair-info')">Lihat Detail</span>
+            <div class="info" id="repair-info">
+                <p>Melayani perbaikan software dan hardware untuk laptop, PC, dan perangkat Android dengan harga
+                    terjangkau.</p>
+                <p>Update Operating System Windows 7/8/10 ke Windows 11 Terbaru</p>
+                <p>Downgrade Operating System Windows 8/10/11 ke Windows 7/8/10 untuk lebih ringan</p>
+                <p>Atau ingin membersihkan data karena PC terasa lambat atau terkena virus</p>
+            </div>
+        </section>
+
+        <section id="design" class="service">
+            <h2>Jasa Desain Grafis</h2>
+            <img src="Artboard 1.png" alt="Desain Grafis">
+        </section>
+
+        <section id="contact" class="contact">
+            <p>Hubungi kami melalui WhatsApp:</p>
+            <a href="https://wa.me/6285183046035?text=Halo%2C%20saya%20ingin%20bertanya" target="_blank">Chat via
+                WhatsApp</a>
+        </section>
+    </div>
+
+    <script>
+        function toggleInfo(id) {
+            var element = document.getElementById(id);
+            element.style.display = element.style.display === "none" || element.style.display === "" ? "block" : "none";
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2025 Bambang Tech - Jasa Komputer & Desain</p>
+    </footer>
+</body>
+
+</html>
